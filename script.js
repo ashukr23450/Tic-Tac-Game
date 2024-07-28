@@ -1,7 +1,7 @@
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-btn");
 
-let turnO = true; //for player 1 and player 2
+let turnO = true; // for player 1 and player 2
 
 let winPattern = [
     [0, 1, 2],
@@ -16,6 +16,13 @@ let winPattern = [
 
 boxes.forEach((box)=>{
     box.addEventListener("click" ,()=>{
-      if(turnO)  
+      if(turnO === true){
+        box.innerText = "O";
+        turnO = false; 
+      }  else {
+        box.innerText = "X";
+        turnO = true ;
+      }
+      box.disabled = true ;
     })
 })
