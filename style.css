@@ -13,8 +13,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+    /* min-height: 100vh; */
+    text-align: center; 
 }
 
 .container{
@@ -42,6 +42,7 @@ main {
     box-shadow: 0,0,1rem rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
     color: #ff0054;
+    background-color: #a9bcd0;
 }
 
 .reset-btn{
