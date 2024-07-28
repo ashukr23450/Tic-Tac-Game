@@ -31,4 +31,13 @@ body{
     border-radius: 1rem;
     border: none;
     box-shadow: 0,0,1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #ff0054;
+}
+
+.reset-btn{
+    height: 1rem;
+    background-color: #00171f;
+    color: white;
+    
 }
