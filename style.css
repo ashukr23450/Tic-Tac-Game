@@ -36,8 +36,10 @@ body{
 }
 
 .reset-btn{
-    height: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
     background-color: #00171f;
     color: white;
-    
 }
