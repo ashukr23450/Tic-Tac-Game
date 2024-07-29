@@ -24,6 +24,24 @@ boxes.forEach((box) =>{
       turnO = true ;
     }
     box.disabled = true;
+
+    checkWinner ();
   });
 });
+
+//Applying for condition to winner
+
+const checkWinner = ()=>{
+  for (let winner of winPatterns){
+    let firstBox = boxes[winner[0]].innerText;
+    let secondBox = boxes[winner[1]].innerText;
+    let thirdBox = boxes[winner[2]].innerText;
+
+    if(firstBox != "" && secondBox !="" && thirdBox !=""){
+      if(firstBox === secondBox && secondBox === thirdBox){
+        console.log("Winner" ,firstBox);
+    }
+  }
+}
+}
 
