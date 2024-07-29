@@ -14,15 +14,16 @@ let winPatterns = [
     [2, 4, 6]
 ];  // Chances to win
 
-boxes.forEach((box)=>{
-    box.addEventListener("click" ,()=>{
-      if(turnO === true){
-        box.innerText = "O";
-        turnO = false; 
-      }  else {
-        box.innerText = "X";
-        turnO = true ;
-      }
-      box.disabled = true;
-    });
+boxes.forEach((box) =>{
+  box.addEventListener("click", ()=>{
+    if (turnO === true){
+      box.innerText = "O";
+      turnO = false ;
+    }else{
+      box.innerText = "X";
+      turnO = true ;
+    }
+    box.disabled = true;
+  });
 });
+
