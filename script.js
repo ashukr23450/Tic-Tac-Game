@@ -1,5 +1,8 @@
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-btn");
+let newGameBtn = document.querySelector("#new-btn");
+let msgContainer = document.querySelector(".msg-container");
+let msg = document.querySelector(".msg");
 
 let turnO = true; // for player 1 and player 2
 
@@ -29,6 +32,13 @@ boxes.forEach((box) =>{
   });
 });
 
+// Showing the message 
+
+const showWinner =(winr)=>{
+  msg.innerText = `Congratulation Winner is ${winr}`
+  msgContainer.classList.remove("hide")
+}
+
 //Applying for condition to winner
 
 const checkWinner = ()=>{
@@ -40,8 +50,8 @@ const checkWinner = ()=>{
     if(firstBox != "" && secondBox !="" && thirdBox !=""){
       if(firstBox === secondBox && secondBox === thirdBox){
         console.log("Winner" ,firstBox);
-    }
-  }
-}
-}
-
+        checkWinner();
+    };
+  };
+};
+};

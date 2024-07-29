@@ -54,7 +54,7 @@ main {
     color: white;
 }
 
-.new-btn{
+#new-btn{
     padding: 1rem;
     font-size:1rem;
     border-radius:1rem;
