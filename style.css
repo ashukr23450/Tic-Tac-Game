@@ -53,3 +53,25 @@ main {
     background-color:#00171f;
     color: white;
 }
+
+.new-btn{
+    padding: 1rem;
+    font-size:1rem;
+    border-radius:1rem;
+    border:none;
+    background-color:#00171f;
+    color: white;    
+}
+
+.msg{
+    font-size: 6vmin;
+    color:#a9bcd0 ;
+}
+
+.msg-container{
+    height: 40vmin;
+}
+
+.hide{
+    display: none;
+}
