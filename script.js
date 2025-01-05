@@ -1,4 +1,4 @@
-let box = document.querySelectorAll(".box");
+let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-btn");
 
 let turnO = true ;
@@ -13,3 +13,24 @@ let winPatterns = [
     [0,4,8],
     [2,4,6]
 ];
+
+boxes.forEach((box)=>{
+    box.addEventListener("click" , function (){
+        if (turnO == true){
+            box.innerText = "O"
+            turnO = false ;
+        }else{
+            box.innerText = "X"
+            turnO = true ;
+        }
+        box.disabled = true ;
+    });
+    checkWinner();
+});
+
+const checkWinner = ()=>{
+    for (let pattern of winPatterns){
+        console.log(pattern);
+                
+    };
+};
