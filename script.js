@@ -60,7 +60,6 @@ const showWinner = (winner) =>{
 
 const checkWinner = () =>{
     for (let pattern of winPatterns){
-        console.log(pattern[0],pattern[1],pattern[2]);
         let pos1Val = boxes[pattern[0]].innerText;
         let pos2Val = boxes[pattern[1]].innerText;
         let pos3Val = boxes[pattern[2]].innerText;
