@@ -46,3 +46,25 @@ body{
     border-radius: 1rem;
     border: none;
 }
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.20rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #ffff7f;
+    font-size: 5vmin;
+}
+
+.msg-container{
+    height: 25vmin;
+}
+
+.hide{
+    display: none;
+}
