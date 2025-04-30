@@ -18,6 +18,7 @@ let winPatterns = [
 ];
 
 
+
 boxes.forEach((box)=>{
     box.addEventListener("click" , function (){
         if (turnO == true){
